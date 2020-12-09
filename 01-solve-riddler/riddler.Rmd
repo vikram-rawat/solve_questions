@@ -49,8 +49,8 @@ Of the 20 people in the circle, who has the greatest chance of being the last to
 ```{r}
 
 sim <- data.table::CJ(
-  trial = 1:5,
-  step = 1:2
+  trial = 1:1e3,
+  step = 1:1e3
   ) %>% 
   cbind(
     .[
